@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../assets/logo.png';
 import vector from '../assets/vector2.png'
-console.log(vector)
+import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
     return (
@@ -13,28 +13,28 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Home</a></li>
-        <li><a>Apps</a></li>
-        <li><a>Installation</a></li>
+        className="menu menu-sm dropdown-content ">
+        <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/apps'>Apps</NavLink></li>
+        <li><NavLink to='/installation'>Installation</NavLink></li>
       </ul>
     </div>
     <img className='h-[30px] w-[30px]' src={logo} alt="" />
-    <a className="btn btn-ghost text-[#632EE3] text-xl">HERO.IO</a>
+    <Link to='/' className="text-[#632EE3] text-xl ml-2">HERO.IO</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
-      <li><a>Home</a></li>
-      <li><a>Apps</a></li>
-      <li><a>Installation</a></li>
+    <ul className="flex gap-3 text-md ">
+      <li><NavLink className="hover:underline hover:text-[#632EE3]" to='/'>Home</NavLink></li>
+      <li><NavLink className="hover:underline hover:text-[#632EE3]" to='/apps'>Apps</NavLink></li>
+      <li><NavLink className="hover:underline hover:text-[#632EE3]" to='/installation'>Installation</NavLink></li>
     </ul>
   </div>
   <div className="navbar-end ">
-    <a
+    <NavLink
     href="https://github.com/mehers-bonna"
     target="_blank"                           
     rel="noopener noreferrer" 
-    className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white"><img className="h-6 w-6"  src={vector} alt="" /> Contribute</a>
+    className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white"><img className="h-6 w-6"  src={vector} alt="" /> Contribute</NavLink>
   </div>
 </div>
     );
