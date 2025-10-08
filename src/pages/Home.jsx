@@ -4,7 +4,6 @@ import AppCard from '../components/AppCard';
 import useApps from '../Hooks/useApps';
 
 const Home = () => {
-    // const apps = useLoaderData()
     const {apps, loading, error} = useApps()
     const featuredApps = apps.slice(0,8)
     return (
