@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://i.ibb.co.com/R4P97tjk/demo-app-1.webp",
+    "title": "FocusFlow",
+    "companyName": "ZenLabs",
+    "id": 1,
+    "description": "FocusFlow helps you achieve deep work by combining the power of the Pomodoro technique with productivity analytics",
+    "size": 45,
+    "reviews": 11230,
+    "ratingAvg": 4.6,
+    "downloads": 2500000,
+    "ratings": [
+      { "name": "1 ", "count": 320 },
+      { "name": "2 ", "count": 540 },
+      { "name": "3 ", "count": 1320 },
+      { "name": "4 ", "count": 2900 },
+      { "name": "5 ", "count": 8150 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/vCG3MRtC/demo-app-2.webp",
+    "title": "FitMate",
+    "companyName": "CoreActive Inc.",
+    "id": 2,
+    "description": "FitMate is your all-in-one personal trainer, nutritionist, and motivator.",
+    "size": 78,
+    "reviews": 8450,
+    "ratingAvg": 4.3,
+    "downloads": 1850000,
+    "ratings": [
+      { "name": "1 ", "count": 210 },
+      { "name": "2 ", "count": 370 },
+      { "name": "3 ", "count": 940 },
+      { "name": "4 ", "count": 2500 },
+      { "name": "5 ", "count": 4930 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/JDhMjYT/demo-app-3.webp",
+    "title": "BudgetBee",
+    "companyName": "FinTechHive",
+    "id": 3,
+    "description": "BudgetBee helps you manage your money with smart automation and intuitive insights. ",
+    "size": 52,
+    "reviews": 9900,
+    "ratingAvg": 4.7,
+    "downloads": 3100000,
+    "ratings": [
+      { "name": "1 ", "count": 150 },
+      { "name": "2 ", "count": 270 },
+      { "name": "3 ", "count": 720 },
+      { "name": "4 ", "count": 2200 },
+      { "name": "5 ", "count": 6560 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/5grwpK8x/demo-app-4.webp",
+    "title": "MindNest",
+    "companyName": "CalmSphere",
+    "id": 4,
+    "description": "MindNest brings peace and mindfulness to your busy life. Enjoy guided meditations, sleep stories, and breathing exercises that help reduce stress and anxiety.",
+    "size": 65,
+    "reviews": 12700,
+    "ratingAvg": 4.8,
+    "downloads": 4600000,
+    "ratings": [
+      { "name": "1 ", "count": 200 },
+      { "name": "2 ", "count": 340 },
+      { "name": "3 ", "count": 800 },
+      { "name": "4 ", "count": 2400 },
+      { "name": "5 ", "count": 8960 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/HTmCMZQ1/demo-app-5.webp",
+    "title": "Readify",
+    "companyName": "SmartReads",
+    "id": 5,
+    "description": "Readify turns your reading goals into achievable habits. ",
+    "size": 41,
+    "reviews": 6780,
+    "ratingAvg": 4.5,
+    "downloads": 1950000,
+    "ratings": [
+      { "name": "1 ", "count": 190 },
+      { "name": "2 ", "count": 260 },
+      { "name": "3 ", "count": 830 },
+      { "name": "4 ", "count": 2080 },
+      { "name": "5 ", "count": 3420 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Tq4VQ4Lh/demo-app-6.webp",
+    "title": "TaskHero",
+    "companyName": "Hero Labs",
+    "id": 6,
+    "description": "TaskHero helps you stay on top of your daily goals with smart task management tools. Create to-do lists, set reminders, and track productivity levels through visual dashboards. ",
+    "size": 60,
+    "reviews": 15800,
+    "ratingAvg": 4.9,
+    "downloads": 5200000,
+    "ratings": [
+      { "name": "1 ", "count": 250 },
+      { "name": "2 ", "count": 380 },
+      { "name": "3 ", "count": 920 },
+      { "name": "4 ", "count": 3100 },
+      { "name": "5 ", "count": 11150 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/R4P97tjk/demo-app-1.webp",
+    "title": "StudyPlus",
+    "companyName": "EduBoost",
+    "id": 7,
+    "description": "StudyPlus is the ultimate study partner for students of all ages. ",
+    "size": 53,
+    "reviews": 9200,
+    "ratingAvg": 4.4,
+    "downloads": 2300000,
+    "ratings": [
+      { "name": "1 ", "count": 310 },
+      { "name": "2 ", "count": 490 },
+      { "name": "3 ", "count": 1120 },
+      { "name": "4 ", "count": 2460 },
+      { "name": "5 ", "count": 4820 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/vCG3MRtC/demo-app-2.webp",
+    "title": "TravelMate",
+    "companyName": "SkyPath",
+    "id": 8,
+    "description": "TravelMate makes trip planning effortless and enjoyable. ",
+    "size": 88,
+    "reviews": 15700,
+    "ratingAvg": 4.6,
+    "downloads": 4900000,
+    "ratings": [
+      { "name": "1 ", "count": 400 },
+      { "name": "2 ", "count": 670 },
+      { "name": "3 ", "count": 1500 },
+      { "name": "4 ", "count": 3200 },
+      { "name": "5 ", "count": 9930 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/JDhMjYT/demo-app-3.webp",
+    "title": "RecipeGenie",
+    "companyName": "TastyByte",
+    "id": 9,
+    "description": "RecipeGenie brings creativity to your kitchen with thousands of easy, healthy, and delicious recipes. ",
+    "size": 67,
+    "reviews": 7350,
+    "ratingAvg": 4.2,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 ", "count": 290 },
+      { "name": "2 ", "count": 410 },
+      { "name": "3 ", "count": 900 },
+      { "name": "4 ", "count": 2000 },
+      { "name": "5 ", "count": 3750 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/5grwpK8x/demo-app-4.webp",
+    "title": "PetPal",
+    "companyName": "Pawverse",
+    "id": 10,
+    "description": "PetPal is your pet’s best digital companion. Keep track of vet visits, feeding schedules, and medication reminders all in one app. ",
+    "size": 59,
+    "reviews": 6050,
+    "ratingAvg": 4.5,
+    "downloads": 1750000,
+    "ratings": [
+      { "name": "1 ", "count": 180 },
+      { "name": "2 ", "count": 260 },
+      { "name": "3 ", "count": 750 },
+      { "name": "4 ", "count": 1800 },
+      { "name": "5 ", "count": 3060 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/HTmCMZQ1/demo-app-5.webp",
+    "title": "MusicFlow",
+    "companyName": "TuneSphere",
+    "id": 11,
+    "description": "MusicFlow offers a seamless music streaming experience with AI-curated playlists and personalized sound recommendations. ",
+    "size": 92,
+    "reviews": 21000,
+    "ratingAvg": 4.7,
+    "downloads": 6700000,
+    "ratings": [
+      { "name": "1 ", "count": 480 },
+      { "name": "2 ", "count": 720 },
+      { "name": "3 ", "count": 1650 },
+      { "name": "4 ", "count": 4200 },
+      { "name": "5 ", "count": 12950 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Tq4VQ4Lh/demo-app-6.webp",
+    "title": "MediMind",
+    "companyName": "HealthConnect",
+    "id": 12,
+    "description": "MediMind connects you with certified doctors, tracks your health reports, and sends medication reminders. ",
+    "size": 102,
+    "reviews": 9500,
+    "ratingAvg": 4.6,
+    "downloads": 3600000,
+    "ratings": [
+      { "name": "1 ", "count": 280 },
+      { "name": "2 ", "count": 460 },
+      { "name": "3 ", "count": 960 },
+      { "name": "4 ", "count": 2400 },
+      { "name": "5 ", "count": 5400 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/R4P97tjk/demo-app-1.webp",
+    "title": "Langly",
+    "companyName": "LinguaSoft",
+    "id": 13,
+    "description": "Langly makes learning languages fun and interactive. Practice speaking with AI tutors, play vocabulary games, and earn badges as you progress. ",
+    "size": 81,
+    "reviews": 12800,
+    "ratingAvg": 4.7,
+    "downloads": 4200000,
+    "ratings": [
+      { "name": "1 ", "count": 310 },
+      { "name": "2 ", "count": 470 },
+      { "name": "3 ", "count": 960 },
+      { "name": "4 ", "count": 2800 },
+      { "name": "5 ", "count": 8260 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/vCG3MRtC/demo-app-2.webp",
+    "title": "TimeCraft",
+    "companyName": "PeakSoft",
+    "id": 14,
+    "description": "TimeCraft lets you organize your time like never before. ",
+    "size": 49,
+    "reviews": 7800,
+    "ratingAvg": 4.4,
+    "downloads": 1900000,
+    "ratings": [
+      { "name": "1 ", "count": 210 },
+      { "name": "2 ", "count": 310 },
+      { "name": "3 ", "count": 740 },
+      { "name": "4 ", "count": 2050 },
+      { "name": "5 ", "count": 4490 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/JDhMjYT/demo-app-3.webp",
+    "title": "ShopWise",
+    "companyName": "RetailWorks",
+    "id": 15,
+    "description": "ShopWise helps you find the best deals and discounts across thousands of online stores. ",
+    "size": 73,
+    "reviews": 16500,
+    "ratingAvg": 4.5,
+    "downloads": 5800000,
+    "ratings": [
+      { "name": "1 ", "count": 390 },
+      { "name": "2 ", "count": 520 },
+      { "name": "3 ", "count": 1220 },
+      { "name": "4 ", "count": 3400 },
+      { "name": "5 ", "count": 8970 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/5grwpK8x/demo-app-4.webp",
+    "title": "ArtLoop",
+    "companyName": "VisionaryApps",
+    "id": 16,
+    "description": "ArtLoop connects artists and art enthusiasts in one creative ecosystem. ",
+    "size": 95,
+    "reviews": 5400,
+    "ratingAvg": 4.3,
+    "downloads": 1250000,
+    "ratings": [
+      { "name": "1 ", "count": 200 },
+      { "name": "2 ", "count": 310 },
+      { "name": "3 ", "count": 740 },
+      { "name": "4 ", "count": 1580 },
+      { "name": "5 ", "count": 2570 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/HTmCMZQ1/demo-app-5.webp",
+    "title": "Evently",
+    "companyName": "ConnectHub",
+    "id": 17,
+    "description": "Evently simplifies event planning and networking. Create, manage, and promote your events with ease. ",
+    "size": 85,
+    "reviews": 8900,
+    "ratingAvg": 4.6,
+    "downloads": 3100000,
+    "ratings": [
+      { "name": "1 ", "count": 260 },
+      { "name": "2 ", "count": 390 },
+      { "name": "3 ", "count": 880 },
+      { "name": "4 ", "count": 2350 },
+      { "name": "5 ", "count": 5020 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Tq4VQ4Lh/demo-app-6.webp",
+    "title": "GameLy",
+    "companyName": "PixelLabs",
+    "id": 18,
+    "description": "GameLy gives you personalized game recommendations and connects you with other players worldwide. ",
+    "size": 110,
+    "reviews": 14700,
+    "ratingAvg": 4.8,
+    "downloads": 6700000,
+    "ratings": [
+      { "name": "1 ", "count": 370 },
+      { "name": "2 ", "count": 540 },
+      { "name": "3 ", "count": 1200 },
+      { "name": "4 ", "count": 3300 },
+      { "name": "5 ", "count": 9290 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/R4P97tjk/demo-app-1.webp",
+    "title": "WriteLy",
+    "companyName": "Inkwell Studios",
+    "id": 19,
+    "description": "WriteLy is your creative writing companion. Draft novels, scripts, and poems with distraction-free tools and AI-powered feedback. ",
+    "size": 70,
+    "reviews": 5700,
+    "ratingAvg": 4.4,
+    "downloads": 1450000,
+    "ratings": [
+      { "name": "1 ", "count": 160 },
+      { "name": "2 ", "count": 240 },
+      { "name": "3 ", "count": 600 },
+      { "name": "4 ", "count": 1750 },
+      { "name": "5 ", "count": 2950 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/vCG3MRtC/demo-app-2.webp",
+    "title": "EcoCharge",
+    "companyName": "GreenTech",
+    "id": 20,
+    "description": "EcoCharge helps you monitor your energy usage and carbon footprint. ",
+    "size": 58,
+    "reviews": 6200,
+    "ratingAvg": 4.5,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 ", "count": 180 },
+      { "name": "2 ", "count": 270 },
+      { "name": "3 ", "count": 720 },
+      { "name": "4 ", "count": 1900 },
+      { "name": "5 ", "count": 3130 }
+    ]
+  }
+]

@@ -11,10 +11,12 @@ const router = createBrowserRouter([
         path: "/",
         element: <Layouts />,
         errorElement: <ErrorPage/>,
+        hydrateFallbackElement: <p>Loading....</p>,
         children: [
             {
                 index: true,
                 Component: Home,
+                loader: () => fetch('./appsData.json'),
             },
             {
                 path: "/apps",

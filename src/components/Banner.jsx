@@ -19,7 +19,7 @@ const Banner = () => {
             </div>
             <img className='mx-auto my-6' src={hero} alt="" />
             </div>
-            <div className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] w-[424px] h-[150px] md:w-full h-[410px] text-center'>
+            <div className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] w-[424px] md:w-full h-[410px] text-center'>
                 <h1 className='text-4xl text-white font-semibold text-center pt-16 py-20'>Trusted by Millions, Built for You</h1>
                 <div className='flex justify-center items-center gap-8 md:gap-16'>
                 <div>
