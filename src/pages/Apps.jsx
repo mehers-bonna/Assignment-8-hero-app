@@ -10,11 +10,6 @@ const Apps = () => {
     const [loading, setLoading] = useState(false)
     const [searchedApps, setSearchedApps] = useState(apps)
 
-
-    // const term = search.trim().toLocaleLowerCase()
-    // const searchedApps = term? 
-    // apps.filter(app => app.title
-    // .toLocaleLowerCase().includes(term)) : apps
     useEffect(() => {
         setLoading(true);
 
@@ -35,8 +30,8 @@ const Apps = () => {
         return () => clearTimeout(delay); 
     }, [search, apps]);
     return (
-        <div>
-            <div className='my-10'>
+        <div className='bg-[#F5F5F5]'>
+            <div className='py-10'>
                 <h1 className='text-4xl text-center font-bold '>Our All Applications</h1>
                 <p className='text-center tex-sm text-gray-500 mt-5'>Explore All Apps on the Market developed by us. We code for Millions</p>
             </div>
@@ -55,7 +50,7 @@ const Apps = () => {
                     </h1>
                 </div>
             ) : (
-            <div className='grid grid-cols-1 md:grid-cols-4 gap-10 max-w-[1600px] m-auto mb-10'>
+            <div className='grid grid-cols-1 md:grid-cols-4 gap-10 max-w-[1600px] m-auto pb-10'>
                 {searchedApps.length > 0 ? (
                     searchedApps.map(app => (
                         <AppCard key={app.id} app={app} />

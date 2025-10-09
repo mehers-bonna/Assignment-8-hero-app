@@ -14,7 +14,6 @@ const AppDetails = () => {
     const {id} = useParams()
     const {apps} = useApps()
     const [isInstalled, setIsInstalled] = useState(false);
-    // const app = apps.find(p => String(p.id) === id)
     const app = apps.find((a) => String(a.id) === id);
 
     if (!apps || apps.length === 0) {
@@ -115,7 +114,7 @@ const AppDetails = () => {
                             />
                             <Bar
                                 dataKey="count"
-                                fill="#f97316" // orange
+                                fill="#f97316" 
                                 radius={[0, 6, 6, 0]}
                                 barSize={25}
                             >
@@ -132,7 +131,9 @@ const AppDetails = () => {
 
             <div className="mt-5 border-t border-gray-300">
                 <h2 className="text-2xl font-semibold mt-5  ">Description</h2>
-                <p className="text-gray-700 leading-relaxed my-5">{description}</p>
+                <p className="text-gray-500 leading-relaxed my-5">{description}</p>
+                <p className='text-gray-500'>A unique feature of this app is the integration of task lists with timers. You can assign each task to a specific Pomodoro session, making your schedule more structured. The built-in analytics show not only how much time you’ve worked but also which tasks consumed the most energy. This allows you to reflect on your efficiency and adjust your workflow accordingly. The app also includes optional background sounds such as white noise, nature sounds, or instrumental music to create a distraction-free atmosphere.</p>
+                <p className='py-5 text-gray-500'>For people who struggle with procrastination, the app provides motivational streaks and achievements. Completing multiple Pomodoro sessions unlocks milestones, giving a sense of accomplishment. This gamified approach makes focusing more engaging and less like a chore. Whether you’re studying for exams, coding, writing, or handling office work, the app adapts to your routine. By combining focus tracking, task management, and motivational tools, this Pomodoro app ensures that you not only work harder but also smarter. It is a personal trainer for your brain, keeping you disciplined, refreshed, and productive throughout the day.</p>
             </div>
         </div>
     );

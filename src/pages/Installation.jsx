@@ -3,21 +3,23 @@ import download2 from '../assets/download.png';
 import star from '../assets/star.png';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import useApps from '../Hooks/useApps';
+
 
 const Installation = () => {
+    const { apps, loading, error } = useApps();
     const [install, setInstall] = useState([])
     const [sortRatingAvg, setSortRatingAvg] = useState('none')
 
     useEffect(() => {
     const savedList = JSON.parse(localStorage.getItem('Install')) || [];
-        console.log("Install array on mount:", savedList);
         setInstall(savedList);
     }, []);
-const handleInstall = (id) => {
+const handleInstall = (id, title) => {
         const updated = install.filter(app => app.id !== id);
         setInstall(updated);
         localStorage.setItem('Install', JSON.stringify(updated));
-        toast.success('App uninstalled successfully!', {
+        toast.success(`"${title}" uninstalled successfully!`, {
             position: "top-right",
             autoClose: 2000
         });
@@ -36,16 +38,18 @@ const handleInstall = (id) => {
     }
 
     useEffect(() => {
-    const handleStorageChange = () => {
-      const updatedList = JSON.parse(localStorage.getItem('Install')) || [];
-      setInstall(updatedList);
-    };
-    window.addEventListener('storage', handleStorageChange);
-    return () => window.removeEventListener('storage', handleStorageChange);
-  }, []);
+    if (apps.length === 0) return;
+    const filtered = install.map(installedApp =>
+        apps.find(app => app.id === installedApp.id)
+    ).filter(Boolean);
+    setInstall(filtered);
+   }, [apps]);
+
+    if (loading) return <p className="text-center py-20">Loading apps...</p>;
+    if (error) return <p className="text-center py-20 text-red-500">Error loading apps!</p>;
 
     return (
-        <div>
+        <div className='bg-[#F5F5F5] h-[70vh]'>
              <ToastContainer />
          <div className='flex justify-between items-center py-10 max-w-[1600px] m-auto'>
          <h1 className='text-2xl font-semibold'><span>({install.length})</span> Apps Found</h1>
@@ -96,7 +100,7 @@ const handleInstall = (id) => {
                          </div>
                         </div>
 
-                    <button onClick={() => handleInstall(p.id)}
+                    <button onClick={() => handleInstall(p.id, p.title)}
                         className="bg-[#00D390] hover:bg-[#05be82] text-white px-4 py-1.5 rounded-md text-sm font-semibold"> Uninstall </button>
                     </div>
             ))}

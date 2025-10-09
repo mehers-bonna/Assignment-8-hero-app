@@ -7,9 +7,9 @@ const AppCard = ({app}) => {
     console.log(app)
     const {image, ratingAvg, title, description, ratings, id} = app
     return (
-        <div className="card bg-base-100 w-96 shadow hover:scale-105 transition ease-in-out">
-            <figure>
-                <img
+            <div className="card bg-base-100 w-96 shadow hover:scale-105 transition ease-in-out ">
+            <figure className='pt-5'>
+                <img className='rounded-2xl '
                     src={image} />
             </figure>
             <div className="card-body">

@@ -9,9 +9,9 @@ import { NavLink } from 'react-router';
 const Banner = () => {
     return (
         <div>
-            <div>
+            <div className='bg-[#F5F5F5]'>
                 <div className='text-center'>
-                <h1 className='text-5xl font-bold my-8'>We Build <br /> <span className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent'>Productive</span> Apps</h1>
+                <h1 className='text-5xl font-bold py-8'>We Build <br /> <span className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent'>Productive</span> Apps</h1>
                 <p className='text-[11px] md:text-sm text-gray-600'>At HERO.IO , we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
             </div>
             <div className='flex justify-center items-center gap-3 mt-5'>
@@ -26,7 +26,7 @@ const Banner = () => {
                 rel="noopener noreferrer"
                  className='flex gap-2 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 transition font-semibold'><img src={group3} alt="" />App Store</NavLink>
             </div>
-            <img className='mx-auto my-6' src={hero} alt="" />
+            <img className='mx-auto mt-6' src={hero} alt="" />
             </div>
             <div className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] w-[424px] md:w-full h-[410px] text-center'>
                 <h1 className='text-4xl text-white font-semibold text-center pt-16 py-20'>Trusted by Millions, Built for You</h1>
