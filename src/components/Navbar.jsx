@@ -31,7 +31,7 @@ const Navbar = () => {
   </div>
   <div className="navbar-end ">
     <NavLink
-    href="https://github.com/mehers-bonna"
+    to="https://github.com/mehers-bonna"
     target="_blank"                           
     rel="noopener noreferrer" 
     className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white"><img className="h-6 w-6"  src={vector} alt="" /> Contribute</NavLink>

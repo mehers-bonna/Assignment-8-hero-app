@@ -11,7 +11,9 @@ const router = createBrowserRouter([
     {
         path: "/",
         element: <Layouts />,
-        errorElement: <ErrorPage/>,
+        errorElement: <Layouts>
+            <ErrorPage />
+        </Layouts>,
         hydrateFallbackElement: <p>Loading....</p>,
         children: [
             {
@@ -27,9 +29,13 @@ const router = createBrowserRouter([
                 Component: Installation,
             },
             {
-               path: '/app/:id',
-               element: <AppDetails></AppDetails> 
+                path: '/app/:id',
+                element: <AppDetails></AppDetails>
             },
+            {
+                path: "*",
+                element: <ErrorPage />,
+            }
 
         ]
     },

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useParams } from 'react-router';
 import useApps from '../Hooks/useApps';
 import download from '../assets/download.png';
@@ -6,22 +6,57 @@ import star from '../assets/star.png';
 import review from '../assets/review.png';
 import {BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer,
     LabelList,} from 'recharts';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+import AppError from './AppError';
 
 const AppDetails = () => {
     const {id} = useParams()
     const {apps} = useApps()
-    const app = apps.find(p => String(p.id) === id)
+    const [isInstalled, setIsInstalled] = useState(false);
+    // const app = apps.find(p => String(p.id) === id)
+    const app = apps.find((a) => String(a.id) === id);
 
-    if (!app) return <p>Loading...</p>;
+    if (!apps || apps.length === 0) {
+    return <p className="text-center mt-10">Loading...</p>;
+    }
+    if (!app) {
+    return <AppError />; 
+    }
     
-    const {image, title, companyName, downloads, ratingAvg, reviews, ratings, description,} = app;
+    const {image, title, companyName, downloads, ratingAvg, reviews, ratings, description, size} = app;
 
     const ratingData = [...ratings].reverse().map(r => ({
         name: `${r.name.trim()} star`,
         count: r.count,
     }));
+
+    const handleInstallNow = () => {
+  const existingList = JSON.parse(localStorage.getItem('Install')) || [];
+
+  const isDuplicate = existingList.some(a => a.id === app.id);
+
+  if (isDuplicate) {
+    toast.warning(`${title} is already installed!`, {
+      position: "top-center",
+      autoClose: 2000,
+    });
+    return;
+  }
+
+  const updatedList = [...existingList, app];
+  localStorage.setItem('Install', JSON.stringify(updatedList));
+
+  setIsInstalled(true);
+  toast.success(`Yahoo 🔥 !! ${title} installed successfully`, {
+    position: "top-center",
+    autoClose: 2000,
+  });
+};
+
     return (
         <div className='max-w-[1600px] m-auto'>
+            <ToastContainer  />
             <div className='flex flex-col md:flex-row gap-10 items-start my-10'>
                 <img className="rounded-lg shadow-md" src={image} alt="" />
             
@@ -45,7 +80,9 @@ const AppDetails = () => {
                     <h1 className='text-3xl font-bold'>{reviews.toLocaleString()}</h1>
                 </div>
             </div>
-            <button className='bg-[#00D390] px-4 py-2 rounded-md text-white'>Install Now (291 MB)</button>
+            <button onClick={handleInstallNow} className={`px-4 py-2 rounded-md text-white ${isInstalled ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#00D390]'}`}
+            disabled={isInstalled}>
+             {isInstalled ? 'Installed' : `Install Now ${size}MB`}</button>
             </div>
             </div>
 
