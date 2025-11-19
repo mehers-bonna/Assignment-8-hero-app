@@ -1,6 +1,6 @@
 # Hero Apps
 
-![Hero Apps Screenshot](YOUR_SCREENSHOT_LINK_HERE)
+![Hero Apps Screenshot](https://i.ibb.co.com/BHQH3F0n/heroApps.png)
 
 ## Overview
 Hero Apps is an interactive web application built with **React and JavaScript**. 
